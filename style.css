@@ -1,0 +1,78 @@
+/* 全体のダーク背景 */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 中央のコンテナ */
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* タイトル */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 入力エリア */
+.input-area {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #2a2a2a;
+    color: #fff;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4f8cff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3a6fd8;
+}
+
+/* タスクリスト */
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#taskList li {
+    background-color: #2a2a2a;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* 完了したタスクの見た目 */
+.done {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+#taskList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ログイン画面 -->
+    <div id="auth">
+      <h2>ログイン</h2>
+      <input id="email" type="email" placeholder="メールアドレス">
+      <input id="password" type="password" placeholder="パスワード">
+      <button id="loginBtn">ログイン</button>
+      <button id="signupBtn">新規登録</button>
+      <button id="googleLoginBtn">Googleでログイン</button>
+    </div>
+
+    <!-- アプリ画面 -->
+    <div id="app" style="display:none;">
+      <div class="container">
+          <h1>Task Manager</h1>
+
+          <div class="input-area">
+              <input id="taskInput" type="text" placeholder="タスクを入力">
+              <button id="addBtn">追加</button>
+          </div>
+
+          <ul id="taskList"></ul>
+
+          <button id="logoutBtn">ログアウト</button>
+      </div>
+    </div>
+
+    <!-- Supabase SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+
+    <!-- あなたの script.js -->
+    <script src="script.js"></script>
+
+</body>
+</html>
